@@ -28,6 +28,8 @@ ws.on("open", () => {
 });
 ```
 
+Calling `ws.close()` or `ws.terminate()` will close the underlying `ws` Client and stop reconnecting.
+
 There's also additional nice method `ws.json(data, options)`, which will stringify data and send it as a JSON.
 
 ## Caveats
