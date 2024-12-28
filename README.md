@@ -16,6 +16,7 @@ Everything is the same as in `ws` Client, but with `reconnect`, `reconnectInterv
 import WebSocket from "recowebsocket";
 
 const ws = new WebSocket("wss://echo.websocket.org", {
+  // these are the default values
   reconnect: true,
   reconnectInterval: 1000,
   reconnectMaxAttempts: 5,
