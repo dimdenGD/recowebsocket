@@ -32,7 +32,7 @@ There's also additional nice method `ws.json(data, options)`, which will stringi
 
 ## Caveats
 
-- Not all event emitter methods are supported. Only `on`, `once`, `emit` and `off` are supported. `once` will be called once on each reconnect. So it's not actually once I guess.
+- Not all event emitter methods are supported. Only `on`, `once` and `off` are supported. `once` will be called once on each reconnect. So it's not actually once I guess.
 - Some obscure ws client stuff might not work.
 
 ## License

@@ -50,10 +50,6 @@ export default class WebSocketClient extends EventEmitter {
 		this.ws.off(event, callback);
 	}
 
-	emit(event, ...args) {
-		this.ws.emit(event, ...args);
-	}
-
 	connect() {
 		this.ws = new WebSocket(this.url, this.options);
 		if (this._binaryType) {
