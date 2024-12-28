@@ -10,7 +10,7 @@ npm install recowebsocket
 
 ## Usage
 
-Everything is the same as in `ws` Client, but with `reconnect`, `reconnectInterval`, `reconnectMaxAttempts` options. All events you attached will be automatically attached to the underlying `ws` Client, even on reconnect.
+Everything is the same as in `ws` Client, but with `reconnect`, `reconnectInterval`, `reconnectMaxAttempts` options. All events you attached will be automatically attached to the underlying `ws` Client, even on reconnect. Set `reconnectMaxAttempts` to `-1` to reconnect indefinitely.
 
 ```js
 import WebSocket from "recowebsocket";
@@ -19,7 +19,7 @@ const ws = new WebSocket("wss://echo.websocket.org", {
   // these are the default values
   reconnect: true,
   reconnectInterval: 1000,
-  reconnectMaxAttempts: 5,
+  reconnectMaxAttempts: -1,
 });
 
 ws.on("open", () => {
