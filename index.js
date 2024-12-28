@@ -81,7 +81,7 @@ export default class WebSocketClient extends EventEmitter {
 		});
 		this.ws.on("close", (code, reason) => {
 			this.emit("close", code, reason);
-			if (this.reconnect && (this.reconnectAttempts === -1 || ++this.reconnectAttempts < this.reconnectMaxAttempts)) {
+			if (this.reconnect && (this.reconnectMaxAttempts === -1 || ++this.reconnectAttempts < this.reconnectMaxAttempts)) {
 				setTimeout(() => this.connect(), this.reconnectInterval);
 			}
 		});
