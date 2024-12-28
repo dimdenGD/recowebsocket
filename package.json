@@ -1,0 +1,28 @@
+{
+  "name": "recowebsocket",
+  "version": "1.0.0",
+  "description": "WebSocket with automatic reconnection.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimdenGD/recowebsocket.git"
+  },
+  "keywords": [
+    "websocket",
+    "ws",
+    "reconnect"
+  ],
+  "author": "dimden.dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dimdenGD/recowebsocket/issues"
+  },
+  "homepage": "https://github.com/dimdenGD/recowebsocket#readme",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
