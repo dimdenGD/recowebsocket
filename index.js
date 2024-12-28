@@ -7,7 +7,7 @@ export default class WebSocketClient extends EventEmitter {
 	static CLOSING = 2;
 	static CLOSED = 3;
 
-	constructor(url, options) {
+	constructor(url, options = {}) {
 		super();
 		this.events = {};
 		this.eventsOnce = {};
